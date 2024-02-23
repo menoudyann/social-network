@@ -1,0 +1,72 @@
+.login {
+  height: 100vh;
+  background-color: rgb(199 197 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+    min-height: 600px;
+
+    .left {
+      background: linear-gradient(rgb(39, 11, 96, 0.5), rgb(39, 11, 96, 0.5)),
+        url("https://images.pexels.com/photos/19927934/pexels-photo-19927934/free-photo-of-building-corner-by-street.jpeg")
+          center;
+      background-size: cover;
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+
+      p {
+        //insert code...
+      }
+      span {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        background-color: white;
+        color: rgb(39, 11, 96);
+        border: none;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+      }
+
+      form {
+        label {
+        }
+
+        input {
+        }
+
+        button {
+        }
+      }
+    }
+  }
+}
