@@ -1,0 +1,85 @@
+.register {
+  height: 100vh;
+  background-color: rgb(199 197 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    display: flex;
+    width: 50%;
+    border-radius: 10px;
+    background-color: white;
+    min-height: 600px;
+    overflow: hidden;
+    flex-direction: row;
+
+    .left {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+
+      h1 {
+        color: #555;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+        }
+
+        button {
+          width: 50%;
+          padding: 15px;
+          background-color: #938eef;
+          color: white;
+          border: none;
+          font-weight: bolder;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .right {
+      background: linear-gradient(rgb(39, 11, 96, 0.5), rgb(39, 11, 96, 0.5)),
+        url("https://images.pexels.com/photos/20240483/pexels-photo-20240483/free-photo-of-self-portrait-b-w.jpeg")
+          center;
+      background-size: cover;
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      button {
+        width: 50%;
+        padding: 15px;
+        background-color: white;
+        color: rgb(39, 11, 96);
+        border: none;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+    }
+  }
+}

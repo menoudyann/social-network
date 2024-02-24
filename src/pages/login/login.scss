@@ -9,12 +9,14 @@
     display: flex;
     width: 50%;
     border-radius: 10px;
+    flex-direction: row;
     background-color: white;
     min-height: 600px;
+    overflow: hidden;
 
     .left {
       background: linear-gradient(rgb(39, 11, 96, 0.5), rgb(39, 11, 96, 0.5)),
-        url("https://images.pexels.com/photos/19927934/pexels-photo-19927934/free-photo-of-building-corner-by-street.jpeg")
+        url("https://images.pexels.com/photos/17340537/pexels-photo-17340537/free-photo-of-man-standing-on-beach-near-water-in-town.jpeg")
           center;
       background-size: cover;
       flex: 1;
@@ -29,9 +31,6 @@
         line-height: 100px;
       }
 
-      p {
-        //insert code...
-      }
       span {
         font-size: 14px;
         font-weight: bold;
@@ -39,7 +38,7 @@
 
       button {
         width: 50%;
-        padding: 10px;
+        padding: 15px;
         background-color: white;
         color: rgb(39, 11, 96);
         border: none;
@@ -53,18 +52,37 @@
       padding: 50px;
       display: flex;
       flex-direction: column;
+      gap: 50px;
+      justify-content: center;
 
       h1 {
+        color: #555;
       }
 
       form {
-        label {
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
 
         input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+
+          &:focus {
+            outline-color: #c7c5fd;
+            border-bottom: 1px solid #938eef; // Applique votre style de bordure inférieure personnalisé
+          }
         }
 
         button {
+          width: 50%;
+          padding: 15px;
+          background-color: #938eef;
+          color: white;
+          border: none;
+          font-weight: bolder;
+          cursor: pointer;
         }
       }
     }
